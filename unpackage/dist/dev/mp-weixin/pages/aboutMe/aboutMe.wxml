@@ -1,0 +1,1 @@
+<view><view>{{a}}</view><button bindtap="{{b}}">点我</button></view>
