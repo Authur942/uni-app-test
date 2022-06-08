@@ -8,7 +8,16 @@
 <script lang="ts">
 	export default {
 		onLoad() {
-			console.log('aboutme page');
+			console.log('onload');
+		},
+		onShow() {
+			console.log('onshow')
+		},
+		onReady() {
+			console.log('onready');
+		},
+		onHide() {
+			console.log('onhide');
 		},
 		data() {
 			return {

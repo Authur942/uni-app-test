@@ -2,7 +2,16 @@
 var common_vendor = require("../../common/vendor.js");
 const _sfc_main = {
   onLoad() {
-    console.log("aboutme page");
+    console.log("onload");
+  },
+  onShow() {
+    console.log("onshow");
+  },
+  onReady() {
+    console.log("onready");
+  },
+  onHide() {
+    console.log("onhide");
   },
   data() {
     return {

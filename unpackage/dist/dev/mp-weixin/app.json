@@ -1,7 +1,8 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/aboutMe/aboutMe"
+    "pages/aboutMe/aboutMe",
+    "pages/article/article"
   ],
   "window": {
     "navigationBarTextStyle": "black",
