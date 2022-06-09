@@ -6,7 +6,13 @@ const _sfc_main = {
       title: "Hello"
     };
   },
-  onLoad() {
+  onLoad(OBJ) {
+    console.log(this.title);
+    console.log(this);
+    const _this = this;
+    common_vendor.index.$on("toIndex", function(data) {
+      _this.title = data.msg;
+    });
   },
   methods: {}
 };

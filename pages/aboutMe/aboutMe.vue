@@ -19,6 +19,9 @@
 		onHide() {
 			console.log('onhide');
 		},
+		onTabItemTap() {
+			console.log('点击了当前item');
+		},
 		data() {
 			return {
 				name: '关于我'
@@ -27,6 +30,7 @@
 		methods: {
 			hello() {
 				console.log('say hello')
+				uni.$emit('toIndex', {msg: 'i am hello'})
 			}
 		}
 	}

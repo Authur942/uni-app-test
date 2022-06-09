@@ -14,8 +14,13 @@
 				title: 'Hello'
 			}
 		},
-		onLoad() {
-
+		onLoad(OBJ) {
+			console.log(this.title);
+			console.log(this);
+			const _this = this
+			uni.$on('toIndex', function(data){
+				_this.title = data.msg
+			})
 		},
 		methods: {
 

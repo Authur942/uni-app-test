@@ -13,6 +13,9 @@ const _sfc_main = {
   onHide() {
     console.log("onhide");
   },
+  onTabItemTap() {
+    console.log("\u70B9\u51FB\u4E86\u5F53\u524Ditem");
+  },
   data() {
     return {
       name: "\u5173\u4E8E\u6211"
@@ -21,6 +24,7 @@ const _sfc_main = {
   methods: {
     hello() {
       console.log("say hello");
+      common_vendor.index.$emit("toIndex", { msg: "i am hello" });
     }
   }
 };
